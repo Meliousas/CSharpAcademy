@@ -14,7 +14,7 @@ namespace ATMMachine
         State withdrawState;
         State noCashState;
 
-        State state = noCashState;
+        State state;
         public int balance = 0;
 
         public Machine(int currentBalance)
