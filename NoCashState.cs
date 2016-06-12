@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ATMMachine
 {
-    class NoCashState
+    class NoCashState : State
     {
         Machine machine;
 
