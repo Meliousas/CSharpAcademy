@@ -37,14 +37,14 @@ namespace ATMMachine
 
                 if (card.cardPin == pin)
                 {
-                    Console.WriteLine("Podano poprawny kod PIN.");
+                    Console.WriteLine("PIN authenticated.");
                     machine.setState(machine.getWithdrawState());
                     break;
                 }
                 if (card.cardPin != pin)
                 {
-                    Console.WriteLine("Kod pin jest niepoprawny!");
-                    Console.WriteLine("Liczba pozostałych prób:" + (3 - i));
+                    Console.WriteLine("Wrong PIN!");
+                    Console.WriteLine("Try " + (3 - i) + " more times." );
                 }
                 if (card.cardPin != pin && i == 3)
                 {
