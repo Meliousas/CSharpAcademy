@@ -16,6 +16,8 @@ namespace ATMMachine
             machine.insertCard();
             machine.insertPin(card);
             machine.withdraw();
+            
+            Console.ReadLine();
         }
     }
 }
