@@ -32,6 +32,18 @@ namespace ATMMachine
 
                 Console.WriteLine("Insert pin:");
                 string written = Console.ReadLine();
+                
+                    try
+                {
+                    int format = Int16.Parse(written);
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Inserted PIN is not a number! Try again another time.", written);
+                    Console.ReadKey();
+                }
+
+
                 int pin = int.Parse(written);
                 
 
